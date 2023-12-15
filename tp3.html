@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctico Número 1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="cuerpo">
+    <div class="titulo"><h1>INFORME DE VENTAS</h1></div>
+   
+    <form action="" class="formulario">
+        <b class="texto">SKU</b><input type="number" id="codigo"> 
+        <b class="texto">Productos</b> <input type="text" id="prod"> 
+        <b class="texto">Mes </b><input type="date" id="mes"> 
+        <b class="texto">Cantidad Vendida</b> <input type="number" id="cantidad-vendida"> 
+        <b class="texto">Precio</b> <input type="number" id="precio"> 
+        <b class="texto">Total Ventas</b> <input type="number" id="total-ventas">
+        
+        <div class="botones">
+            <input class="input" type="button" value="PUSH" onclick="agregar()">
+            <input class="input" type="button" value="UNSHIFT" onclick="principio()">
+            <input  class="input" type="button" value="SHIFT" onclick="eliminarp()">
+            <input class="input" type="button" value="POP" onclick="botonpop()">
+            <input class="input" type="button" value="TOTAL" onclick="sumatotal()">
+            <div class="buscar">
+                <input class="input" type="button" value="BUSCAR" onclick="buscar()" id="boton-buscar"><input type="text" id="clave" class="input2"> 
+            </div>
+            
+        </div>
+    </form>
+    <div id="tabla-html"></div>
+    <div id="resultado-buscar"></div>
+    <div id="resultado-total"></div>
+    <script src="script.js"></script>
+</body>
+</html>
